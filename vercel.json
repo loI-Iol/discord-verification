@@ -1,34 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "https://00000000000000000000000000000000000000000000000000000000000000.0000000000000000000000.com/(.*)",
       "destination": "https://00000000000000000000000000000000000000000000000000000000000000.0000000000000000000000.com/$1",
-      "permanent": true,
-      "statusCode": 301
+      "permanent": true
     }
-  ],
-  "headers": [
-    {
-      "source": "/.well-known/discord",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
-    }
-  ],
-  "functions": {
-    "app/api/**/*.js": {
-      "maxDuration": 10
-    }
-  },
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "installCommand": "",
-  "devCommand": ""
+  ]
 }
