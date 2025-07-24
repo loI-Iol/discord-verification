@@ -4,10 +4,7 @@
       "source": "/(.*)",
       "destination": "https://00000000000000000000000000000000000000000000000000000000000000.0000000000000000000000.com/$1",
       "permanent": true,
-      "statusCode": 301,
-      "headers": {
-        "cache-control": "s-maxage=0"
-      }
+      "statusCode": 301
     }
   ],
   "headers": [
